@@ -1,14 +1,50 @@
 <ion-header>
   <ion-navbar>
     <ion-title>
-      Ionic Blank
+      Ionic Local-Chat
     </ion-title>
   </ion-navbar>
 </ion-header>
 
 <ion-content padding>
-  The world is your oyster.
-  <p>
-    If you get lost, the <a href="http://ionicframework.com/docs/v2">docs</a> will be your guide.
-  </p>
+  <h4>Digite seu usuário.</h4>
+
+  <ion-list>
+
+    <ion-item>
+      <ion-label floating>Username</ion-label>
+      <ion-input type="text" [(ngModel)]="users.username"></ion-input>
+    </ion-item>
+
+  </ion-list>
+  <br />
+  <h4>Selecione a sala.</h4>
+    <ion-list>
+
+      <ion-item>
+        <ion-thumbnail item-start>
+          <img src="../../assets/imgs/cinema.jpg">
+        </ion-thumbnail>
+        <h2>Cinema</h2>
+        <button ion-button clear item-end>Entrar</button>
+      </ion-item>
+
+      <ion-item>
+          <ion-thumbnail item-start>
+            <img src="../../assets/imgs/sports.jpg">
+          </ion-thumbnail>
+          <h2>Esportes</h2>
+          <button ion-button clear item-end>Entrar</button>
+        </ion-item>
+
+        <ion-item>
+            <ion-thumbnail item-start>
+              <img src="../../assets/imgs/diversos.png">
+            </ion-thumbnail>
+            <h2>Diversos</h2>
+            <button ion-button clear item-end>Entrar</button>
+          </ion-item>
+
+    </ion-list>
+
 </ion-content>
